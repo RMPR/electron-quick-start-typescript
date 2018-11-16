@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/addMember.css">
+
+    <title>Ajouter un Membre</title>
+</head>
+
+<body>
+    <div class="container">
+    <form class="form-horizontal" onsubmit="memberAdded()">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 banner">
+                <h2>Ajouter un Membre</h2>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 field-label-responsive">
+                <label for="name">Nom</label>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                        <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-user"></i></div>
+                        <input type="text" name="name" class="form-control" id="name" placeholder="John Doe" required
+                            autofocus>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-control-feedback">
+                    <span class="text-danger align-middle">
+                        <!-- Put name validation error messages here -->
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 field-label-responsive">
+                <label for="name">Numéro</label>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                        <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-user"></i></div>
+                        <input type="text" name="name" class="form-control" id="phoneNumber" placeholder="6 79 89 09 89" required
+                            autofocus>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-control-feedback">
+                    <span class="text-danger align-middle">
+                        <!-- Put name validation error messages here -->
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 field-label-responsive">
+                <label for="email">Adresse e-mail</label>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                        <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-at"></i></div>
+                        <input type="text" name="email" class="form-control" id="email" placeholder="you@example.com"
+                            required autofocus>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-control-feedback">
+                    <span class="text-danger align-middle">
+                        <!-- Put e-mail validation error messages here -->
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 field-label-responsive">
+                <label for="text">Entreprise</label>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group has-danger">
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                        <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-key"></i></div>
+                        <input type="text" name="text" class="form-control" id="entreprise" placeholder="Entreprise"
+                            required>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 field-label-responsive">
+                <label for="contribution">Contribution</label>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group has-danger">
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                        <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-key"></i></div>
+                        <input type="text" name="text" class="form-control" id="contribution" placeholder="Entrez un montant"
+                            required>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 field-label-responsive">
+                <label for="date">Date</label>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group has-danger">
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                        <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-key"></i></div>
+                        <input type="text" name="text" class="form-control" id="dateContribution" placeholder="JJ.MM.AAAA"
+                            required>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <button class="btn btn-success" style="float:right; margin:5%;">Enregistrer</button>
+            </div>
+        </div>
+    </form>
+    </div>
+    <script src="./node_modules/jquery/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        require('./scripts/addMember.js');
+    </script>
+</body>
+
+</html>
