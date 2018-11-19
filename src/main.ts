@@ -1,7 +1,6 @@
 const globalAny:any = global;
 import { app, BrowserWindow } from "electron"
 import * as path from "path"
-import * as xlsx from "xlsx"
 
 
 let mainWindow: Electron.BrowserWindow;
@@ -52,17 +51,3 @@ app.on("activate", () => {
 
 // In this file you can include the rest of your app"s specific main process
 // code. You can also put them in separate files and require them here.
-
-const community: any = xlsx.readFile("data/4GI.ods").Sheets.Sheet1;
-let length: any = community['!ref']
-length = length.split(":")[1].replace( /^\D+/g, '')
-delete community["!ref"];
-    // let cells :any = Object.keys(community)
-for (const key in community){
-  community[key] = community[key]['w']
-}
-console.log(length)
-globalAny.sharedOject = {
-  members: community,
-  number: length
-}
