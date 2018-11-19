@@ -14,7 +14,7 @@
 
 <body>
     <div class="container">
-    <form class="form-horizontal" onsubmit="memberAdded()">
+    <form class="form-horizontal" onsubmit="return memberAdded()">
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6 banner">
@@ -142,9 +142,7 @@
     </div>
     <script src="./node_modules/jquery/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        require('./scripts/addMember.js');
-    </script>
-</body>
+    <script src="./scripts/addMember.js"></script>
+    </body>
 
 </html>
