@@ -78,7 +78,7 @@ function updateList(name, montant) {
                   ${montant}<br />FCFA</p>
               </div>
               <div class="col-xs-12 col-md-6">
-                <a class="btn btn-success" onclick="alert('infos sur la personne X')">Détails</a>
+                <a class="btn btn-success details" onclick="return viewPerson(this)">Détails</a>
               </div>
             </div>
           </div>
@@ -139,3 +139,19 @@ window.addEventListener('storage', function(e) {
         xlsx.writeFile(workbook, 'data/4GI.ods')
     }
 })
+    function viewPerson(event){
+        let a = document.getElementsByClassName('details')
+        for (const i of a){
+            i.addEventListener('click', function(){
+                console.log(i)
+                let grandPere = i.parentNode.parentNode.parentNode.firstChild.nextSibling.innerText
+                console.log(grandPere)
+                localStorage.setItem("view", grandPere)
+                const modalPath=path.join('file://', __dirname, 'viewMember.html')
+                let win = new BrowserWindow({alwaysOnTop: true, width:600, height:700})
+                win.on('close', function() { win = null})
+                win.loadURL(modalPath)
+                win.show()
+            })
+        }
+}
