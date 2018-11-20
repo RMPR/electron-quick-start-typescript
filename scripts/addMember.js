@@ -1,4 +1,3 @@
-
 function memberAdded() {
     let length = 0
     name = document.getElementById('name').value
@@ -15,5 +14,4 @@ function memberAdded() {
     localStorage.setItem("E"+length, contribution)
     localStorage.setItem("F"+length, dateContribution)
     localStorage.setItem("size", length)
-    updateList(name, contribution)
 }

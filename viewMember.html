@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/viewmember.css">
-    <script src="./scripts/viewMember.js"></script>
 
     <title>Voir membre</title>
 </head>
@@ -36,7 +35,7 @@
                 <div class="form-group">
                     <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                         <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-user"></i></div>
-                        <label for="name">Nom</label>
+                        <label for="name" id="name">Nom</label>
                     </div>
                 </div>
             </div>
@@ -56,7 +55,7 @@
                 <div class="form-group">
                     <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                         <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-phone"></i></div>
-                        <label for="name">Numéro</label>
+                        <label for="name" id="numero">Numéro</label>
                     </div>
                 </div>
             </div>
@@ -76,7 +75,7 @@
                 <div class="form-group">
                     <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                         <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-at"></i></div>
-                        <label for="email">Adresse e-mail</label>
+                        <label for="email" id="email">Adresse e-mail</label>
                     </div>
                 </div>
             </div>
@@ -96,7 +95,7 @@
                 <div class="form-group has-danger">
                     <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                         <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-group"></i></div>
-                        <label for="text">Entreprise</label>
+                        <label for="text" id="entreprise">Entreprise</label>
                     </div>
                 </div>
             </div>
@@ -111,7 +110,7 @@
                 <div class="form-group has-danger">
                     <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                         <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-money"></i></div>
-                        <label for="contribution">Somme</label>
+                        <label for="contribution" id="contribution">Somme</label>
                     </div>
                 </div>
             </div>
@@ -122,7 +121,7 @@
     <div class="col">
             <br> <h6>
             Contributions entre <input type="date" name="datefinale" id=""> et <input type="date" name="datefinale" id=""></h6>
-            <br> <table>
+            <br> <table id="contributionTable">
               <thead>
                 <tr>
                   <th>Date</th>
@@ -162,8 +161,7 @@
     </div>
     <script src="./node_modules/jquery/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        require('./scripts/addMember.js');
+    <script src="./scripts/viewMember.js">
     </script>
 </body>
 
