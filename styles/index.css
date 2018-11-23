@@ -17,7 +17,7 @@ item {
         border-color: #ffffff;
 }
 .seach{
-    text-align: right;
+    float: right;
 }
 .reset{
     width: 120px;
