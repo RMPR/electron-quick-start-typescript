@@ -19,3 +19,12 @@ item {
 .seach{
     text-align: right;
 }
+.reset{
+    width: 120px;
+    height: 30px;
+    background-color:  #011f03;
+    color: #FFF;
+    margin: 3%;
+    border-color: #ffffff;
+   object-position: 0%;
+}
