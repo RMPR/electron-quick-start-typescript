@@ -5,7 +5,6 @@
 .inner-header {
     color: #FFF;
 }
-<<<<<<< HEAD
 item {
     max-height: 250px;
 }
@@ -17,5 +16,6 @@ item {
         margin: 3%;
         border-color: #ffffff;
 }
-=======
->>>>>>> b348c13dbd64433e8393b9532c59c2d06f4cd393
+.seach{
+    text-align: right;
+}
